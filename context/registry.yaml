@@ -13,17 +13,17 @@ artifacts:
   - id: ADR-0003
     type: ADR
     title: "Test the API with xUnit and the app with Vitest"
-    status: accepted
+    status: implemented
     path: context/adr/ADR-0003-test-the-api-with-xunit-and-the-app-with-vitest.md
   - id: BPM-0001
     type: BPM
     title: "Check that the API is reachable"
-    status: accepted
+    status: implemented
     path: context/bpm/BPM-0001-check-that-the-api-is-reachable.md
   - id: NFR-0001
     type: NFR
     title: "API requests from the app time out"
-    status: accepted
+    status: implemented
     path: context/nfr/NFR-0001-api-requests-from-the-app-time-out.md
   - id: PROC-0001
     type: PROC
@@ -153,5 +153,5 @@ artifacts:
   - id: US-0002
     type: US
     title: "A visitor sees one clear API status"
-    status: accepted
+    status: implemented
     path: context/stories/US-0002-a-visitor-sees-one-clear-api-status.md

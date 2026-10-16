@@ -76,7 +76,7 @@ Ask the `reviewer` subagent to review the branch ([harness/agents/reviewer.md](h
 | Stack | Format | Lint | Types | Test |
 |---|---|---|---|---|
 | API (.NET 8) | `dotnet format` | `dotnet format --verify-no-changes` | `dotnet build -warnaserror` | `dotnet test` on `tests/*Tests.csproj` |
-| App (React) | Prettier | Prettier check, ESLint | — (JavaScript) | `npm test`, once a runner is added |
+| App (React) | Prettier | Prettier check, ESLint | — (JavaScript) | Vitest, `npm test -- --run` |
 | Harness (Python) | Ruff | Ruff | — | — |
 
 ## Writing
