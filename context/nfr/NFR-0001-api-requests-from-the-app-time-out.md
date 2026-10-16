@@ -3,7 +3,7 @@ id: NFR-0001
 title: API requests from the app time out
 type: nfr
 domain: platform
-status: review
+status: accepted
 budget: 10 seconds per request
 enforced_by: US-0002 acceptance criteria AC-0002-04 and AC-0002-05
 ---

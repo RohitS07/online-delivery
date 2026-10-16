@@ -2,7 +2,7 @@
 id: ADR-0001
 title: Browser origins allowed by the API come from configuration
 type: adr
-status: review
+status: accepted
 ---
 
 # ADR-0001 — Browser origins allowed by the API come from configuration

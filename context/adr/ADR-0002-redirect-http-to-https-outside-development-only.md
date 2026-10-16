@@ -2,7 +2,7 @@
 id: ADR-0002
 title: Redirect HTTP to HTTPS outside Development only
 type: adr
-status: review
+status: accepted
 ---
 
 # ADR-0002 — Redirect HTTP to HTTPS outside Development only

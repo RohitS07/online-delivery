@@ -2,7 +2,7 @@
 id: ADR-0003
 title: Test the API with xUnit and the app with Vitest
 type: adr
-status: review
+status: accepted
 ---
 
 # ADR-0003 — Test the API with xUnit and the app with Vitest

@@ -3,27 +3,27 @@ artifacts:
   - id: ADR-0001
     type: ADR
     title: "Browser origins allowed by the API come from configuration"
-    status: review
+    status: accepted
     path: context/adr/ADR-0001-browser-origins-allowed-by-the-api-come-from-configuration.md
   - id: ADR-0002
     type: ADR
     title: "Redirect HTTP to HTTPS outside Development only"
-    status: review
+    status: accepted
     path: context/adr/ADR-0002-redirect-http-to-https-outside-development-only.md
   - id: ADR-0003
     type: ADR
     title: "Test the API with xUnit and the app with Vitest"
-    status: review
+    status: accepted
     path: context/adr/ADR-0003-test-the-api-with-xunit-and-the-app-with-vitest.md
   - id: BPM-0001
     type: BPM
     title: "Check that the API is reachable"
-    status: review
+    status: accepted
     path: context/bpm/BPM-0001-check-that-the-api-is-reachable.md
   - id: NFR-0001
     type: NFR
     title: "API requests from the app time out"
-    status: review
+    status: accepted
     path: context/nfr/NFR-0001-api-requests-from-the-app-time-out.md
   - id: PROC-0001
     type: PROC
@@ -143,15 +143,15 @@ artifacts:
   - id: SPEC-0001
     type: SPEC
     title: "Health check endpoint"
-    status: review
+    status: accepted
     path: context/specs/SPEC-0001-health-check-endpoint.md
   - id: US-0001
     type: US
     title: "The API accepts browser calls only from configured origins"
-    status: review
+    status: accepted
     path: context/stories/US-0001-the-api-accepts-browser-calls-only-from-configured-origins.md
   - id: US-0002
     type: US
     title: "A visitor sees one clear API status"
-    status: review
+    status: accepted
     path: context/stories/US-0002-a-visitor-sees-one-clear-api-status.md

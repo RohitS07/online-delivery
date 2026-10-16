@@ -3,7 +3,7 @@ id: US-0001
 title: The API accepts browser calls only from configured origins
 type: us
 domain: platform
-status: review
+status: accepted
 bpm: BPM-0001
 actor: operator
 constrained_by: [ADR-0001, ADR-0002, ADR-0003]
