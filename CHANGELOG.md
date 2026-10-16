@@ -9,6 +9,7 @@ Newest first. See [RULE-0016](harness/rules/RULE-0016-changelog-format.md).
 - `Makefile`: `install`, per-stack `fmt`, `lint`, `typecheck`, `build` and `test` for .NET and React, `check`, `db-up`, `db-down`, `run-api` and `run-app`
 
 ### Changed
+- `AGENTS.md`: the app is tested with Vitest
 - `Makefile`: API targets run on `OnlineDelivery.sln`, so they cover its tests; `make test-api` runs `dotnet test`
 - `AGENTS.md` names the project, its three repositories, the cross-stack workflow and its invariants, merged from the old `CLAUDE.md`
 - `.mcp.json` has no servers: the app does not use shadcn/ui

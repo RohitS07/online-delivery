@@ -13,6 +13,7 @@ Decisions have their own log in [adr/CHANGELOG.md](adr/CHANGELOG.md).
 - [US-0002](stories/US-0002-a-visitor-sees-one-clear-api-status.md): a visitor sees one clear API status
 
 ### Changed
+- [US-0002](stories/US-0002-a-visitor-sees-one-clear-api-status.md), [NFR-0001](nfr/NFR-0001-api-requests-from-the-app-time-out.md): implemented in `online-delivery-app`; [BPM-0001](bpm/BPM-0001-check-that-the-api-is-reachable.md) is implemented with both its stories
 - [US-0001](stories/US-0001-the-api-accepts-browser-calls-only-from-configured-origins.md), [SPEC-0001](specs/SPEC-0001-health-check-endpoint.md): implemented in `online-delivery-api`
 
 ## 2026-09-26

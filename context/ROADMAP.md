@@ -9,9 +9,9 @@ Work that is done is struck through here, and stays so the order is still readab
 
 | Work | Artefacts |
 |---|---|
-| Test runners for both apps | [ADR-0003](adr/ADR-0003-test-the-api-with-xunit-and-the-app-with-vitest.md) |
+| ~~Test runners for both apps~~ | [ADR-0003](adr/ADR-0003-test-the-api-with-xunit-and-the-app-with-vitest.md) |
 | ~~API: CORS from configuration, HTTPS outside Development~~ | [US-0001](stories/US-0001-the-api-accepts-browser-calls-only-from-configured-origins.md), [SPEC-0001](specs/SPEC-0001-health-check-endpoint.md) |
-| App: Tailwind loaded, API client with a time limit, one API status | [US-0002](stories/US-0002-a-visitor-sees-one-clear-api-status.md), [NFR-0001](nfr/NFR-0001-api-requests-from-the-app-time-out.md) |
+| ~~App: Tailwind loaded, API client with a time limit, one API status~~ | [US-0002](stories/US-0002-a-visitor-sees-one-clear-api-status.md), [NFR-0001](nfr/NFR-0001-api-requests-from-the-app-time-out.md) |
 
 ## Open questions that change the order
 

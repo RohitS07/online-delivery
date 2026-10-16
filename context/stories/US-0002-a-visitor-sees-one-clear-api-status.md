@@ -3,7 +3,7 @@ id: US-0002
 title: A visitor sees one clear API status
 type: us
 domain: platform
-status: accepted
+status: implemented
 bpm: BPM-0001
 actor: visitor
 constrained_by: [ADR-0003]

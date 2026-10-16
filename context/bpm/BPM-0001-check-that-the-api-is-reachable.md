@@ -3,7 +3,7 @@ id: BPM-0001
 title: Check that the API is reachable
 type: bpm
 domain: platform
-status: accepted
+status: implemented
 actors: [visitor, app, API]
 triggers: [the visitor opens the app]
 constrained_by: [ADR-0001, ADR-0002]
