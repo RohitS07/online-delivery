@@ -5,6 +5,7 @@ Newest first. See [RULE-0016](rules/RULE-0016-changelog-format.md).
 ## 2026-10-16
 
 ### Changed
+- `hooks/pre_commit.py` formats and builds the API through `OnlineDelivery.sln`, tests included
 - `hooks/`: one set of hooks serves the workspace and both app repositories; `pre-commit` checks C# with `dotnet format` and `dotnet build -warnaserror`, the app with Prettier and ESLint, and runs the context gate on any markdown change
 - `gates/harness_check.py` skips `bin/`, `obj/` and `dist/`
 - [RULE-0018](rules/RULE-0018-documentation-servers-are-reached-only-through-mcp-tools.md): no documentation server is configured yet

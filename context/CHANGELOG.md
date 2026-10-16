@@ -12,6 +12,9 @@ Decisions have their own log in [adr/CHANGELOG.md](adr/CHANGELOG.md).
 - [US-0001](stories/US-0001-the-api-accepts-browser-calls-only-from-configured-origins.md): the API accepts browser calls only from configured origins
 - [US-0002](stories/US-0002-a-visitor-sees-one-clear-api-status.md): a visitor sees one clear API status
 
+### Changed
+- [US-0001](stories/US-0001-the-api-accepts-browser-calls-only-from-configured-origins.md), [SPEC-0001](specs/SPEC-0001-health-check-endpoint.md): implemented in `online-delivery-api`
+
 ## 2026-09-26
 
 ### Added
