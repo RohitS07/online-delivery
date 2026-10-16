@@ -6,6 +6,8 @@ GATE := harness/gates/harness_check.py
 # The two apps, each its own git repository inside this workspace.
 API := online-delivery-api
 API_PROJ := OnlineDelivery.Api.csproj
+# The API and its tests, so format, build and test cover both.
+API_SLN := OnlineDelivery.sln
 APP := online-delivery-app
 
 # Run a command inside an app, or skip it where that app is not checked out (the root repo's CI).
@@ -36,7 +38,7 @@ help:
 	@echo "make run-api / run-app  start the API on :5154 or the app on :5173"
 
 install: $(PY)
-	$(call in,$(API),dotnet restore $(API_PROJ))
+	$(call in,$(API),dotnet restore $(API_SLN))
 	$(call in,$(APP),npm ci)
 
 harness-check: $(PY)
@@ -78,7 +80,7 @@ fmt-harness: $(PY)
 	@uv run ruff format --quiet .
 
 fmt-api:
-	$(call in,$(API),dotnet format $(API_PROJ))
+	$(call in,$(API),dotnet format $(API_SLN))
 
 fmt-app:
 	$(call in,$(APP),npm run --silent format)
@@ -90,7 +92,7 @@ lint-harness: $(PY)
 	@uv run ruff format --check .
 
 lint-api:
-	$(call in,$(API),dotnet format $(API_PROJ) --verify-no-changes)
+	$(call in,$(API),dotnet format $(API_SLN) --verify-no-changes)
 
 lint-app:
 	$(call in,$(APP),npm run --silent format:check && npm run --silent lint)
@@ -99,23 +101,21 @@ lint-app:
 typecheck: typecheck-api
 
 typecheck-api:
-	$(call in,$(API),dotnet build $(API_PROJ) -warnaserror --nologo -v q)
+	$(call in,$(API),dotnet build $(API_SLN) -warnaserror --nologo -v q)
 
 build: build-api build-app
 
 build-api:
-	$(call in,$(API),dotnet build $(API_PROJ) --nologo -v q)
+	$(call in,$(API),dotnet build $(API_SLN) --nologo -v q)
 
 build-app:
 	$(call in,$(APP),npm run --silent build)
 
 test: test-api test-app
 
-# Test projects live under online-delivery-api/tests/ and are named *Tests.csproj.
+# Test projects live under online-delivery-api/tests/ and are in the solution.
 test-api:
-	$(call in,$(API),projs=$$(find tests -name '*Tests.csproj' 2>/dev/null); \
-		if [ -n "$$projs" ]; then for p in $$projs; do dotnet test $$p --nologo -v q || exit 1; done; \
-		else echo "test-api: no test project yet"; fi)
+	$(call in,$(API),dotnet test $(API_SLN) --nologo)
 
 test-app:
 	$(call in,$(APP),npm run --silent test --if-present -- --run)

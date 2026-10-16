@@ -3,12 +3,12 @@ artifacts:
   - id: ADR-0001
     type: ADR
     title: "Browser origins allowed by the API come from configuration"
-    status: accepted
+    status: implemented
     path: context/adr/ADR-0001-browser-origins-allowed-by-the-api-come-from-configuration.md
   - id: ADR-0002
     type: ADR
     title: "Redirect HTTP to HTTPS outside Development only"
-    status: accepted
+    status: implemented
     path: context/adr/ADR-0002-redirect-http-to-https-outside-development-only.md
   - id: ADR-0003
     type: ADR
@@ -143,12 +143,12 @@ artifacts:
   - id: SPEC-0001
     type: SPEC
     title: "Health check endpoint"
-    status: accepted
+    status: implemented
     path: context/specs/SPEC-0001-health-check-endpoint.md
   - id: US-0001
     type: US
     title: "The API accepts browser calls only from configured origins"
-    status: accepted
+    status: implemented
     path: context/stories/US-0001-the-api-accepts-browser-calls-only-from-configured-origins.md
   - id: US-0002
     type: US

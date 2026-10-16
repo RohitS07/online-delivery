@@ -3,7 +3,7 @@ id: SPEC-0001
 title: Health check endpoint
 type: spec
 domain: platform
-status: accepted
+status: implemented
 bpm: BPM-0001
 constrained_by: [ADR-0001, ADR-0002]
 ---

@@ -10,11 +10,11 @@ import sys
 from pathlib import Path
 
 WORKSPACE = Path(__file__).resolve().parents[2]
-# .NET apps, directory to project file.
-DOTNET_PROJECTS: dict[str, str] = {"online-delivery-api": "OnlineDelivery.Api.csproj"}
+# .NET apps, directory to the solution holding the app and its tests.
+DOTNET_PROJECTS: dict[str, str] = {"online-delivery-api": "OnlineDelivery.sln"}
 # Node apps formatted by their own Prettier and linted by their own ESLint.
 NODE_PROJECTS: tuple[str, ...] = ("online-delivery-app",)
-DOTNET_SUFFIXES = (".cs", ".csproj", ".editorconfig")
+DOTNET_SUFFIXES = (".cs", ".csproj", ".sln", ".editorconfig")
 PRETTIER_SUFFIXES = (".js", ".jsx", ".mjs", ".cjs", ".ts", ".tsx", ".css", ".json", ".html")
 ESLINT_SUFFIXES = (".js", ".jsx", ".mjs", ".cjs", ".ts", ".tsx")
 
