@@ -12,6 +12,10 @@ Newest first. See [RULE-0016](harness/rules/RULE-0016-changelog-format.md).
 - `AGENTS.md` names the project, its three repositories, the cross-stack workflow and its invariants, merged from the old `CLAUDE.md`
 - `.mcp.json` has no servers: the app does not use shadcn/ui
 - CI gates the context tree and the harness code; each app repository runs its own checks
+- `pyproject.toml` declares the Python version, so uv stops warning on every run
+
+### Removed
+- The root `.prettierrc.json`: the app carries its own
 
 ## 2026-09-26
 
