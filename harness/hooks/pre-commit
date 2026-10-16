@@ -1,0 +1,6 @@
+#!/bin/sh
+# Runs pre_commit.py with the workspace's Python from .venv (3.14), never the system python3. Install with 'make hooks'.
+# The workspace root is two levels above this script, so the hook works from the root repo and from each app repo.
+root=$(cd "$(dirname "$0")/../.." && pwd)
+[ -x "$root/.venv/bin/python" ] || { echo "pre-commit: no .venv; run 'make install' in $root first" >&2; exit 1; }
+exec "$root/.venv/bin/python" "$root/harness/hooks/pre_commit.py" "$@"

@@ -1,0 +1,29 @@
+# Every gate a person can run with make, run the same way (PROC-0001, RULE-0010).
+# The apps are separate repositories with their own CI, so this repo gates the context tree and the harness code.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    env:
+      HARNESS_BANNED_NAMES: ${{ secrets.HARNESS_BANNED_NAMES }}
+    steps:
+      - uses: actions/checkout@v4
+      # The project's Python from .python-version, through uv, as everywhere else.
+      - uses: astral-sh/setup-uv@v6
+      - run: make harness-check
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: make lint-harness

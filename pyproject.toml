@@ -1,0 +1,9 @@
+# One uv workspace for every Python app and package. The harness's own scripts need only the standard library.
+[tool.uv.workspace]
+members = []
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.414",
+    "ruff>=0.16.9",
+]

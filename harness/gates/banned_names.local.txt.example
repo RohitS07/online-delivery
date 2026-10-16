@@ -1,0 +1,3 @@
+# Copy to banned_names.local.txt (gitignored) and add one name per line.
+# RULE-0001: no client, customer or partner name may appear in a tracked file,
+# so the list itself is never committed. CI supplies it via HARNESS_BANNED_NAMES.

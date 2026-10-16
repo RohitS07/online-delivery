@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -z \"$CODER\" ] || gh auth status >/dev/null 2>&1 || { coder external-auth access-token primary-github 2>/dev/null | gh auth login -p https --with-token >/dev/null 2>&1 && echo 'gh: signed in with the Coder GitHub token (RULE-0009)' || echo 'gh: not signed in. Follow RULE-0009 before any gh command'; }; exit 0"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR/.venv/bin/python\" \"$CLAUDE_PROJECT_DIR/.claude/hooks/format.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

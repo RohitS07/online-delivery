@@ -1,0 +1,7 @@
+# Lint and format for every Python file in the repository (RULE-0019).
+line-length = 120
+target-version = "py314"
+extend-exclude = ["**/node_modules"]
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP"]
