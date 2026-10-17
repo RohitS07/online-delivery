@@ -6,6 +6,8 @@ Decisions have their own log in [adr/CHANGELOG.md](adr/CHANGELOG.md).
 ## 2026-10-18
 
 ### Changed
+- `BACKLOG.md`: an OTP request throttle per address, purging old OTP challenges, and refusing to start with only the mock OTP sender outside Development
+- [US-0005](stories/US-0005-a-person-proves-their-mobile-number-and-gets-a-token.md), [SPEC-0003](specs/SPEC-0003-sign-in-with-a-mobile-otp.md): implemented in `online-delivery-api`
 - [US-0004](stories/US-0004-anyone-can-list-the-active-cities-villages-and-categories.md), [SPEC-0002](specs/SPEC-0002-cities-villages-and-categories.md): implemented in `online-delivery-api`
 - [US-0003](stories/US-0003-the-app-is-written-in-typescript-and-still-shows-the-api-status.md): implemented in `online-delivery-app`
 - [US-0002](stories/US-0002-a-visitor-sees-one-clear-api-status.md): its acceptance criteria bind to the tests' new `.ts` and `.tsx` paths, after the move to TypeScript

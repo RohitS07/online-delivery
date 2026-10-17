@@ -208,7 +208,7 @@ artifacts:
   - id: SPEC-0003
     type: SPEC
     title: "Sign in with a mobile OTP"
-    status: accepted
+    status: implemented
     path: context/specs/SPEC-0003-sign-in-with-a-mobile-otp.md
   - id: US-0001
     type: US
@@ -233,7 +233,7 @@ artifacts:
   - id: US-0005
     type: US
     title: "A person proves their mobile number and gets a token"
-    status: accepted
+    status: implemented
     path: context/stories/US-0005-a-person-proves-their-mobile-number-and-gets-a-token.md
   - id: US-0006
     type: US
