@@ -6,6 +6,7 @@ Decisions have their own log in [adr/CHANGELOG.md](adr/CHANGELOG.md).
 ## 2026-10-18
 
 ### Changed
+- [US-0004](stories/US-0004-anyone-can-list-the-active-cities-villages-and-categories.md), [SPEC-0002](specs/SPEC-0002-cities-villages-and-categories.md): implemented in `online-delivery-api`
 - [US-0003](stories/US-0003-the-app-is-written-in-typescript-and-still-shows-the-api-status.md): implemented in `online-delivery-app`
 - [US-0002](stories/US-0002-a-visitor-sees-one-clear-api-status.md): its acceptance criteria bind to the tests' new `.ts` and `.tsx` paths, after the move to TypeScript
 

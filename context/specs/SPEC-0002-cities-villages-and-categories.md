@@ -3,7 +3,7 @@ id: SPEC-0002
 title: Cities, villages and categories
 type: spec
 domain: administration
-status: accepted
+status: implemented
 bpm: BPM-0004
 constrained_by: [ADR-0004, ADR-0010]
 ---
