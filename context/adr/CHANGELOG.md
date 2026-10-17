@@ -5,6 +5,7 @@ Newest first. See [RULE-0016](../../harness/rules/RULE-0016-changelog-format.md)
 ## 2026-10-18
 
 ### Changed
+- [ADR-0004](ADR-0004-store-data-in-postgresql-through-ef-core-with-migrations.md): implemented, with EF Core, Npgsql, the first migration, and tests on PostgreSQL through Testcontainers
 - [ADR-0005](ADR-0005-write-the-app-in-typescript.md): implemented, the app is strict TypeScript and `make typecheck` checks it
 
 ## 2026-10-17

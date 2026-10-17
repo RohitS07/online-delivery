@@ -2,7 +2,7 @@
 id: ADR-0004
 title: Store data in PostgreSQL through EF Core with migrations
 type: adr
-status: accepted
+status: implemented
 ---
 
 # ADR-0004 — Store data in PostgreSQL through EF Core with migrations

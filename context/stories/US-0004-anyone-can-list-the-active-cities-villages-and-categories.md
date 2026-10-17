@@ -3,7 +3,7 @@ id: US-0004
 title: Anyone can list the active cities, villages and categories
 type: us
 domain: administration
-status: accepted
+status: implemented
 bpm: BPM-0004
 actor: visitor
 constrained_by: [ADR-0003, ADR-0004, ADR-0010]

@@ -18,7 +18,7 @@ artifacts:
   - id: ADR-0004
     type: ADR
     title: "Store data in PostgreSQL through EF Core with migrations"
-    status: accepted
+    status: implemented
     path: context/adr/ADR-0004-store-data-in-postgresql-through-ef-core-with-migrations.md
   - id: ADR-0005
     type: ADR
@@ -203,7 +203,7 @@ artifacts:
   - id: SPEC-0002
     type: SPEC
     title: "Cities, villages and categories"
-    status: accepted
+    status: implemented
     path: context/specs/SPEC-0002-cities-villages-and-categories.md
   - id: SPEC-0003
     type: SPEC
@@ -228,7 +228,7 @@ artifacts:
   - id: US-0004
     type: US
     title: "Anyone can list the active cities, villages and categories"
-    status: accepted
+    status: implemented
     path: context/stories/US-0004-anyone-can-list-the-active-cities-villages-and-categories.md
   - id: US-0005
     type: US
