@@ -3,7 +3,7 @@ id: US-0005
 title: A person proves their mobile number and gets a token
 type: us
 domain: identity
-status: accepted
+status: implemented
 bpm: BPM-0005
 actor: person
 constrained_by: [ADR-0003, ADR-0004, ADR-0006, ADR-0007, ADR-0009, ADR-0010]

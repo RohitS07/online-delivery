@@ -17,3 +17,6 @@ scope, so the registry describes what is being built rather than what is imagine
 - Paying agents their delivery fees and item takings.
 - Hosting on Azure, with backups, monitoring and a restore process.
 - A native speaker's review of all Marathi text before go-live.
+- A per-address throttle on `POST /api/v1/auth/otp`, so one caller cannot send codes to many numbers.
+- Purging old OTP challenges.
+- Refusing to start outside Development while the only OTP sender is the mock, which sends nothing.

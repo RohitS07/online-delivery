@@ -3,7 +3,7 @@ id: SPEC-0003
 title: Sign in with a mobile OTP
 type: spec
 domain: identity
-status: accepted
+status: implemented
 bpm: BPM-0005
 constrained_by: [ADR-0004, ADR-0006, ADR-0007, ADR-0009, ADR-0010]
 ---
