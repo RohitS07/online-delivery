@@ -76,6 +76,9 @@ def main() -> int:
         lintable = under(app, files, ESLINT_SUFFIXES)
         if lintable:
             checks.append((f"eslint {app}", [str(bin_dir / "eslint"), *lintable], WORKSPACE / app))
+        # The whole program, since a change to one file can break the types of another: ADR-0005.
+        if under(app, files, (".ts", ".tsx")):
+            checks.append((f"tsc {app}", [str(bin_dir / "tsc"), "--noEmit"], WORKSPACE / app))
 
     failed = [label for label, cmd, cwd in checks if not run(label, cmd, cwd)]
     if failed:

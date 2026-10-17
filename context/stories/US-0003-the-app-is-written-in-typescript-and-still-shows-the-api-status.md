@@ -3,7 +3,7 @@ id: US-0003
 title: The app is written in TypeScript and still shows the API status
 type: us
 domain: platform
-status: accepted
+status: implemented
 bpm: BPM-0001
 actor: developer
 constrained_by: [ADR-0003, ADR-0005]

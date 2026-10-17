@@ -2,6 +2,11 @@
 
 Newest first. See [RULE-0016](rules/RULE-0016-changelog-format.md).
 
+## 2026-10-18
+
+### Changed
+- `hooks/pre_commit.py` runs `tsc --noEmit` in a Node app when a staged `.ts` or `.tsx` file changes ([ADR-0005](../context/adr/ADR-0005-write-the-app-in-typescript.md))
+
 ## 2026-10-16
 
 ### Changed

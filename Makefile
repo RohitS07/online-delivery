@@ -15,7 +15,7 @@ in = @if [ -d $(1) ]; then cd $(1) && $(2); else echo "skip: $(1) is not checked
 
 .PHONY: help install harness-check registry index id new fix linkfix hooks \
 	fmt fmt-harness fmt-api fmt-app lint lint-harness lint-api lint-app \
-	typecheck typecheck-api build build-api build-app test test-api test-app check \
+	typecheck typecheck-api typecheck-app build build-api build-app test test-api test-app check \
 	db-up db-down run-api run-app
 
 help:
@@ -30,7 +30,7 @@ help:
 	@echo "make hooks           use harness/hooks in the root repo and both app repos"
 	@echo "make fmt             format Python, C# and the React app"
 	@echo "make lint            formatting and lint checks, every stack"
-	@echo "make typecheck       compile the API with warnings as errors"
+	@echo "make typecheck       compile the API with warnings as errors, type-check the app"
 	@echo "make build           build the API and the React bundle"
 	@echo "make test            every test suite. Run it after lint and typecheck (RULE-0019)"
 	@echo "make check           lint, typecheck, build, then test"
@@ -97,11 +97,14 @@ lint-api:
 lint-app:
 	$(call in,$(APP),npm run --silent format:check && npm run --silent lint)
 
-# The React app is JavaScript, so the API compile is the only type check.
-typecheck: typecheck-api
+# The API compile, and the app's strict TypeScript check: ADR-0005.
+typecheck: typecheck-api typecheck-app
 
 typecheck-api:
 	$(call in,$(API),dotnet build $(API_SLN) -warnaserror --nologo -v q)
+
+typecheck-app:
+	$(call in,$(APP),npm run --silent typecheck)
 
 build: build-api build-app
 

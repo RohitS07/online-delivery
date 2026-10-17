@@ -2,7 +2,7 @@
 id: ADR-0005
 title: Write the app in TypeScript
 type: adr
-status: accepted
+status: implemented
 ---
 
 # ADR-0005 — Write the app in TypeScript
