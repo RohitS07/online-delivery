@@ -7,7 +7,7 @@ status: implemented
 actors: [visitor, app, API]
 triggers: [the visitor opens the app]
 constrained_by: [ADR-0001, ADR-0002]
-stories: [US-0001, US-0002]
+stories: [US-0001, US-0002, US-0003]
 ---
 
 # BPM-0001 — Check that the API is reachable

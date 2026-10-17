@@ -16,6 +16,7 @@ What the product does. Stack-agnostic, slow-moving, and the only place a behavio
 `BACKLOG.md` lists deferred work with no id, so the registry stays clean.
 `ROADMAP.md` orders the in-scope work that has not shipped yet. Update it when a phase's artefacts change.
 `glossary.md` holds one definition per term. If two artefacts disagree, the glossary wins.
+`delivery-service-specification.md` is the source document the artefacts were written from. It is not an artefact. Where it and an artefact differ, the artefact wins.
 
 ## What does not live here
 
