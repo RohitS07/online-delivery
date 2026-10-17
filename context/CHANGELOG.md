@@ -3,6 +3,12 @@
 Newest first. See [RULE-0016](../harness/rules/RULE-0016-changelog-format.md).
 Decisions have their own log in [adr/CHANGELOG.md](adr/CHANGELOG.md).
 
+## 2026-10-18
+
+### Changed
+- [US-0003](stories/US-0003-the-app-is-written-in-typescript-and-still-shows-the-api-status.md): implemented in `online-delivery-app`
+- [US-0002](stories/US-0002-a-visitor-sees-one-clear-api-status.md): its acceptance criteria bind to the tests' new `.ts` and `.tsx` paths, after the move to TypeScript
+
 ## 2026-10-17
 
 ### Added

@@ -2,6 +2,12 @@
 
 Newest first. See [RULE-0016](harness/rules/RULE-0016-changelog-format.md).
 
+## 2026-10-18
+
+### Changed
+- `Makefile`: `make typecheck` also runs `typecheck-app`, the app's strict TypeScript check ([ADR-0005](context/adr/ADR-0005-write-the-app-in-typescript.md))
+- `AGENTS.md`: the app's type gate is `tsc --noEmit`
+
 ## 2026-10-16
 
 ### Added

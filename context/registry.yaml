@@ -23,7 +23,7 @@ artifacts:
   - id: ADR-0005
     type: ADR
     title: "Write the app in TypeScript"
-    status: accepted
+    status: implemented
     path: context/adr/ADR-0005-write-the-app-in-typescript.md
   - id: ADR-0006
     type: ADR
@@ -223,7 +223,7 @@ artifacts:
   - id: US-0003
     type: US
     title: "The app is written in TypeScript and still shows the API status"
-    status: accepted
+    status: implemented
     path: context/stories/US-0003-the-app-is-written-in-typescript-and-still-shows-the-api-status.md
   - id: US-0004
     type: US
